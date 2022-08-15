@@ -13,8 +13,10 @@
     justify-content: center;
     align-items: center;
     overflow-x: auto;
-    
+    padding-top: 6em;
     flex-direction: column;
+    background-blend-mode: multiply;
+    background-image: linear-gradient(-225deg, #473B7B 0%, #9435a7 51%, rgba(178, 48, 210, 0.884), #473B7B 100%);      
 }
 
 /*********************************************/
@@ -26,7 +28,7 @@
     text-align: left;
     padding: 2em;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.589);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .scroll-title-cont h1{
@@ -39,7 +41,7 @@
     text-align: right;
     padding: 2em 4em 3em 2em;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.589);
+    background-color: rgba(0, 0, 0, 0.5);
     
 }
 
@@ -65,9 +67,24 @@
     position: relative;
     /* background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%); */
     /* animation: bg 5s alternate-reverse infinite; */
-    background-blend-mode: multiply;
-    background-image: linear-gradient(-225deg, #473B7B 0%, #9435a7 51%, rgba(178, 48, 210, 0.884), #473B7B 100%);       
+   
+padding-bottom: 2500px;
+}
 
+
+.scroll .gallery-cont{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 100%;
+   padding: 0 1em;
+ 
+}
+.scroll .gallery-cont .img{
+    width: calc((100% / 3)  );
+    /* border: 5px solid rgba(255, 255, 255, 0.2); */
+     height: 150px;
+    margin: 0;
 }
 
 .scroll-bottom-border{
@@ -148,4 +165,172 @@
 @keyframes moveCircle5 {
     from {transform:translateY(-125%)} 
     to  {transform:translateY(90vh)}
+}
+
+/*imágenes*/
+.img-1{
+    background-image: url(../img/infitinyScroll/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+}
+.img-2{
+    background-image: url(../img/infitinyScroll/2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+ 
+}
+.img-3{
+    background-image: url(../img/infitinyScroll/10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+
+}
+.img-4{
+    background-image: url(../img/infitinyScroll/4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+
+}
+.img-5{
+    background-image: url(../img/infitinyScroll/5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+
+}
+.img-6{
+    background-image: url(../img/infitinyScroll/6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+}
+.img-7{
+    background-image: url(../img/infitinyScroll/7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+ 
+}
+.img-8{
+    background-image: url(../img/infitinyScroll/20.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+
+}
+.img-9{
+    background-image: url(../img/infitinyScroll/9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+
+}
+.img-10{
+    background-image: url(../img/infitinyScroll/10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+
+}
+.img-11{
+    background-image: url(../img/infitinyScroll/11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+ 
+}
+.img-12{
+    background-image: url(../img/infitinyScroll/12.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+
+}
+.img-13{
+    background-image: url(../img/infitinyScroll/13.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+
+}
+.img-14{
+    background-image: url(../img/infitinyScroll/14.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+
+}
+.img-15{
+    background-image: url(../img/infitinyScroll/15.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+
+}
+.img-16{
+    background-image: url(../img/infitinyScroll/16.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+
+}
+.img-17{
+    background-image: url(../img/infitinyScroll/17.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+
+}
+.img-18{
+    background-image: url(../img/infitinyScroll/18.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+
+}
+.img-19{
+    background-image: url(../img/infitinyScroll/19.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+
+}
+.img-20{
+    background-image: url(../img/infitinyScroll/8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+
+}
+.img-21{
+    background-image: url(../img/infitinyScroll/21.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+
+}
+.img-22{
+    background-image: url(../img/infitinyScroll/22.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+
+}
+.img-23{
+    background-image: url(../img/infitinyScroll/23.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+
+}
+.img-24{
+    background-image: url(../img/infitinyScroll/24.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+
 }
