@@ -83,7 +83,7 @@ padding-bottom: 2500px;
 .scroll .gallery-cont .img{
     width: calc((100% / 3)  );
     /* border: 5px solid rgba(255, 255, 255, 0.2); */
-     height: 150px;
+     height: 350px;
     margin: 0;
 }
 
@@ -399,4 +399,13 @@ padding-bottom: 2500px;
     background-repeat: no-repeat;  
     background-position: center;
 
+}
+
+
+/*******************************responsive***************/
+@media screen and (max-width: 600px) {
+   
+    .scroll .gallery-cont .img {
+        height: 150px;
+    }
 }
