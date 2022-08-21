@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.dopamine-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    height: 100vh;
+
+    
+}
+.dopamine-title-cont{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    text-align: left;
+    padding: 2em;
+    width: 100%;
+    background-color: rgba(255, 253, 253, 0.9);
+}
+
+
+.dopamine-title-cont h2{
+    color: #304244;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 0.2em;
+}
+
+.dopamine-title-cont h2:first-child{
+    font-weight: bolder;
+    
+}
+
+
+.btn-cont{
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    text-align: center;
+    padding: 2em;
+    width: 100%;
+    background-color: rgba(255, 253, 253, 0.9);
+}
+
+.btn-cont button{
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    text-align:center;
+    border:2px solid #098f9e;
+    color: #098f9e;
+    background-color: #fff;
+    font-weight: bolder;
+    line-height: 50px;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    font-size: 16px;
+   
+   
+}
+
+.btn-cont button:hover{
+    border:2px solid #0bbacc;
+    color:#0bbacc;
+
+}
+
+.dopamine-cont button:hover{
+    background-color: #187dc0;
+}
+
+.animation-cont{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-size: 1.5rem;
+    position: absolute;
+    /* transform: translateY(350%);
+    transition: transform 15s; */
+}
+
+.none{
+    display: none;
+}
+
+.animation-cont div{
+    margin: 0.3em;
+}
+
+.animate{
+    /* transform: translateY(-200%); */
+    animation: dopamine 8s forwards;
+}
+
+
+.dopamine-text h1{
+    color: #58b4c1;
+    position: relative;
+}
+.dopamine-text h1::before{
+   content: url(../img/dopamine/dopamine-sparkle.svg);
+   position: absolute;
+   left: -18px;
+   top: -10px;
+   width: 18px;
+   transform: rotate(-10deg);
+}
+.dopamine-text h1::after{
+   content: url(../img/dopamine/dopamine-sparkle.svg);
+   position: absolute;
+   right: -18px;
+   bottom: -10px;
+   width: 18px;
+   transform: rotate(10deg);
+}
+
+/* animacion individual */
+
+.animate .animate-e:nth-child(1){
+    transform: translateY(40px) translateX(-20px);
+    z-index: 2;
+    animation: opacity 2s forwards;
+}
+.animate .animate-e:nth-child(2){
+    transform: translateY(80px) translateX(20px);
+    z-index: 2;
+    animation: opacity 2s forwards;
+}
+.animate .animate-e:nth-child(3){
+    transform: translateY(30px) translateX(20px);
+    z-index: 2;
+    animation: opacity 2.2s forwards;
+}
+.animate .animate-e:nth-child(4){
+    transform: translateY(40px) translateX(20px);
+    z-index: 2.4;
+    animation: opacity 3s forwards;
+}
+
+/****/
+
+.animate .animate-e:nth-child(5){
+    transform: translateY(40px) translateX(-10px);
+    z-index: 1;
+    animation: opacity 3s forwards;
+}
+.animate .animate-e:nth-child(6){
+    transform: translateY(120px) translateX(-20px);
+    z-index: 0;
+    animation: opacity 4.2s forwards;
+}
+.animate .animate-e:nth-child(7){
+    transform: translateY(50px) translateX(-80px);
+    z-index: 1;
+    animation: opacity 4s forwards;
+}
+.animate .animate-e:nth-child(8){
+    transform: translateY(40px) ;
+    z-index: 0;
+    animation: opacity 4.5s forwards;
+}
+/****/
+
+.animate .animate-e:nth-child(9){
+    transform: translateY(50px) translateX(-50px) ;
+    z-index: 1;
+    animation: opacity 3.5s forwards;
+}
+.animate .animate-e:nth-child(10){
+    transform: translateY(80px) ;
+    z-index: 0;
+    animation: opacity 5.5s forwards;
+}
+.animate .animate-e:nth-child(11){
+    transform: translateY(30px) translateX(-20px);
+    z-index: 1;
+    animation: opacity 6s forwards;
+}
+.animate .animate-e:nth-child(12){
+    transform: translateY(40px) translateX(-50px);
+    z-index: 2;
+    animation: opacity 8s forwards;
+}
+/****/
+
+.animate .animate-e:nth-child(13){
+    transform: translateY(40px);
+    z-index: 2;
+    animation: opacity 7.3s forwards;
+}
+.animate .animate-e:nth-child(14){
+    transform: translateY(80px) translateX(20px);
+    z-index: 0;
+    animation: opacity 7s forwards;
+}
+.animate .animate-e:nth-child(15){
+    transform: translateY(30px) ;
+    z-index: 2;
+    animation: opacity 9s forwards;
+}
+.animate .animate-e:nth-child(16){
+    transform: translateY(40px) translateX(20px);
+    z-index: 0;
+    animation: opacity 9s forwards;
+}
+/****/
+
+.animate .animate-e:nth-child(17){
+    transform: translateY(40px) translateX(-10px);
+    z-index: 0;
+    animation: opacity 4.5s forwards;
+}
+.animate .animate-e:nth-child(18){
+    transform: translateY(80px) ;
+    z-index: 0;
+    animation: opacity 6s forwards;
+}
+.animate .animate-e:nth-child(19){
+    transform: translateY(30px);
+    z-index: 2;
+    animation: opacity 10s forwards;
+}
+.animate .animate-e:nth-child(20){
+    transform: translateY(40px);
+    z-index: 1;
+    animation: opacity 9.5s forwards;
+}
+
+.animate-e{
+    position: relative;
+    
+}
+
+/*animation keyframes*/
+
+
+@keyframes dopamine {
+    0%{
+        transform: translateY(100%);
+    }
+
+    100%{
+        transform: translateY(-300%);
+    }
+}
+
+@keyframes opacity {
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
