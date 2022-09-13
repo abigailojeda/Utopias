@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c0ee 100%);
+    background-image: url(../../img/texts/laura-vinck-Hyu76loQLdk-unsplash.jpg);
+}
+
+body.cristal{
+    background-image: url(../../img/texts/john-doyle-oRoxpvL9xJU-unsplash.jpg);
+    background-size: cover;
+}
+
+.text-cont{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    margin: 8em auto 10em auto;
+    background-color: rgba(255, 255, 255, 0.432);
+    padding: 2em;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+animation: appear 2s forwards;
+}
+
+.text-cont.cristal{
+    background-color: rgba(255, 255, 255, 0.684);
+
+}
+
+
+.text-cont p{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+ margin-top: 2em;
+    line-height: 2;
+    color: #000;
+    font-size: 18px;
+   
+}
+
+@keyframes appear{
+0%{
+ transform: translateY(150px);
+ opacity: 0;
+}
+100%{
+    transform: translateY(0);
+    opacity: 1;
+}
+}

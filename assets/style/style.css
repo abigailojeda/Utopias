@@ -27,15 +27,25 @@ body{
 
 } */
 
-.btn-cont{
+.options-cont{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 8rem;
+}
+
+.btn-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
     position: relative;
     z-index: 4;
+    display: none;
 }
+
 
 .btn-cont a{
     text-decoration:none;
