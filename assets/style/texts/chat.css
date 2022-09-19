@@ -7,9 +7,10 @@
 
 body {
   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c0ee 100%);
-  background-image: url(../../img/texts/maria-orlova-bU8TeXhsPcY-unsplash.jpg);
-    background-position: right;
-    background-repeat: no-repeat;
+  background-image: url(../../img/texts/szabo-viktor-28ZbKOWiZfs-unsplash.jpg);
+  /* background-position: right; */
+  background-repeat: no-repeat;
+
 }
 
 .text-cont {
@@ -47,6 +48,7 @@ body {
   }
 }
 
+
 .chat-cont {
   width: 90%;
   margin: auto;
@@ -54,25 +56,37 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
- 
+
 }
 
-.chat-cont div{
-    margin-bottom: 1em;
-    position: relative;
+.chat-cont div {
+  margin-bottom: 1em;
+  position: relative;
+  animation: appear 2s forwards;
+  opacity: 0;
+}
+
+.chat-cont div:nth-child(2){
+ animation-delay: 3s;
+}
+.chat-cont div:nth-child(3){
+  animation-delay: 5s;
+}
+.chat-cont div:nth-child(4){
+  animation-delay: 8s;
 }
 
 .chat-cont .left {
   align-self: flex-start;
   width: 80%;
   background-color: #fff;
-  padding: 1em ;
+  padding: 1em;
   border-radius: 12px;
 }
 .chat-cont .rigth {
   align-self: flex-end;
   width: 80%;
-  background-color: rgb(105, 159, 105);
+  background-color: rgb(169, 217, 210);
   padding: 1em;
   border-radius: 12px;
 }
