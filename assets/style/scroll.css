@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    color: #335a5f;
 }
 
 body{
@@ -10,7 +11,7 @@ body{
 }
 
 .scroll-cont{
-    width: 100%;
+    width: 450px;
     height:100vh;
     margin: auto;
     justify-content: center;
@@ -20,6 +21,7 @@ body{
     flex-direction: column;
     background-blend-mode: multiply;
     background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    position: relative;
 }
 
 /*********************************************/
@@ -35,7 +37,7 @@ body{
 }
 
 .scroll-title-cont h1{
-    color: #304244;
+    color: #335a5f;
 }
 .scroll-credits-cont{
     position: fixed;
@@ -43,13 +45,13 @@ body{
     bottom: 0;
     text-align: right;
     padding: 2em 3em 2em 0;
-    width: 100%;
+    width: 450px;
     background-color: rgba(255, 253, 253, 0.9);
     
 }
 
 .scroll-credits-cont h2{
-    color: #304244;
+    color: #335a5f;
     font-weight: 300;
     font-size: 18px;
     margin-bottom: 0.2em;
@@ -453,5 +455,14 @@ body{
    
     .scroll .gallery-cont .img {
         height: 150px;
+    }
+    .scroll-cont{
+        width: 100%;
+    }
+
+    .scroll-credits-cont{
+        width: 100%;
+
+        
     }
 }
