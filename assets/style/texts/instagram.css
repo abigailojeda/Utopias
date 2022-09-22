@@ -5,10 +5,7 @@
     font-family: sans-serif;
 }
 
-body{
-    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c0ee 100%);
-    background-image: url(../../img/texts/laura-vinck-Hyu76loQLdk-unsplash.jpg);
-}
+
 
 body.cristal{
     background-image: url(../../img/texts/john-doyle-oRoxpvL9xJU-unsplash.jpg);
@@ -16,34 +13,50 @@ body.cristal{
 }
 
 .text-cont{
-    width: 80%;
+    width:450px;
+    height: 100vh;
     margin:auto;
     text-align: center;
-    margin: 8em auto 10em auto;
-    background-color: rgba(255, 255, 255, 0.432);
-    padding: 2em;
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    margin: 0 auto;
+    /* background-color: rgba(255, 255, 255, 0.432); */
+    padding: 2em 0 8em 0;
+overflow-y: auto;
+    /* -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-animation: appear 2s forwards;
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75); */
+
+background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  ),
+  url(../../img/texts/instagramclouds.jpg);
 }
 
 .text-cont.cristal{
-    background-color: rgba(255, 255, 255, 0.684);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url(../../img/texts/cristalbackground.jpg);
 
 }
 
 
-.text-cont p{
+.text-cont p, .text-cont h1{
     width: 80%;
     margin:auto;
     text-align: center;
  margin-top: 2em;
     line-height: 2;
-    color: #000;
+    color: rgb(255, 255, 255);
     font-size: 18px;
-   
+    animation: appear 2s forwards;
+}
+
+.text-cont h1{
+    font-size: 25px;
 }
 
 @keyframes appear{
@@ -55,4 +68,13 @@ animation: appear 2s forwards;
     transform: translateY(0);
     opacity: 1;
 }
+}
+
+@media screen and (max-width: 600px) {
+   
+ 
+    .text-cont{
+        width: 100%;
+    }
+
 }

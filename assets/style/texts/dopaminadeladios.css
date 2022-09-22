@@ -5,34 +5,24 @@
   font-family: sans-serif;
 }
 
-body{
-  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c0ee 100%);
-  background-image: url(../../img/texts/laura-vinck-Hyu76loQLdk-unsplash.jpg);
-}
 
-body.cristal{
-  background-image: url(../../img/texts/john-doyle-oRoxpvL9xJU-unsplash.jpg);
-  background-size: cover;
-}
 
 .text-cont{
-  width: 80%;
+  width: 450px;
   margin:auto;
   text-align: center;
-  margin: 8em auto 10em auto;
-  background-color: rgba(255, 255, 255, 0.432);
-  padding: 2em;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-animation: appear 2s forwards;
+  padding: 6em 0 4em 0;
+  height: 100vh;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  ),
+  url(../../img/texts/perfeccion.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
-.text-cont.cristal{
-  background-color: rgba(255, 255, 255, 0.684);
-
-}
 
 
 .text-cont p{
@@ -41,12 +31,15 @@ animation: appear 2s forwards;
   text-align: center;
 margin-top: 2em;
   line-height: 2;
-  color: #000;
+  color: #fff;
   font-size: 18px;
+  animation: appear 2s forwards;
  
 }
 .text-cont h1{
   margin-bottom: 1em;
+  animation: appear 2s forwards;
+  color: #fff;
 }
 
 @keyframes appear{
@@ -58,4 +51,21 @@ opacity: 0;
   transform: translateY(0);
   opacity: 1;
 }
+}
+
+@media screen and (max-width: 600px) {
+   
+ 
+  .text-cont{
+      width: 100%;
+  }
+
+}
+@media screen and (max-width: 600px) {
+   
+ 
+  .text-cont{
+      width: 100%;
+  }
+
 }
